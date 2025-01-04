@@ -15,7 +15,7 @@ const DashboardData = () => {
     const fetchNews = async () => {
       try {
         const response = await axios.get(
-          `https://newsapi.org/v2/everything?q=sports&apiKey=028905632fe3447284d33315b9ba3886`
+          `https://newsapi.org/v2/everything?q=sports&apiKey=3af3fdc01d08411bb07db7e0b7cd4560`
         );
         const articles = response.data.articles.map((article) => ({
           ...article,
