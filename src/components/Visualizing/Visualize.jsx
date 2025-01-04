@@ -48,7 +48,7 @@ const Visualize = () => {
   };
 
   return (
-    <div className="w-full min-h-screen lg:w-[84.5%] top-16 bg-light-back dark:bg-dark-fore relative left-0 lg:left-56 p-4 space-y-6">
+    <div className="w-full min-h-screen lg:w-[84.5%] top-16 bg-light-back text-light-text dark:text-dark-text dark:bg-dark-fore relative left-0 lg:left-56 p-4 space-y-6">
        <span> Inconsole i have data but due to somereason i was unable to complete it sorry : ) </span>
        <span>Done by prince 🏱</span>
        <a href="tel:+919334326203">Ping me here If you 🎔 it !! </a> 
