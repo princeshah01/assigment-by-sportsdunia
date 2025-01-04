@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import  data  from "../../assets/data.json";
+import  mockdata  from "../../assets/data.json";
 
 const Visualize = () => {
   const [data, setData] = useState([]);
@@ -12,7 +12,7 @@ const Visualize = () => {
         // const response = await axios.get(
         //   `https://newsapi.org/v2/everything?q=sports&apiKey=028905632fe3447284d33315b9ba3886`
         // );
-        const response = data ;
+        const response = mockdata ;
         const articles = response.data.articles.map((article) => ({
           ...article,
           payout: 0,
