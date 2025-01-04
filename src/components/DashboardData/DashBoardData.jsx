@@ -3,7 +3,7 @@ import axios from "axios";
 import OverviewBoxes from "./OverviewBoxes";
 import SearchBar from "./SearchBar";
 import NewsTable from "./NewsTable";
-import { data } from "react-router-dom";
+import  data  from "../../assets/data.json";
 
 const DashboardData = () => {
   const [news, setNews] = useState([]);
@@ -14,9 +14,16 @@ const DashboardData = () => {
   useEffect(() => {
     const fetchNews = async () => {
       try {
-        const response = await axios.get(
-          `https://newsapi.org/v2/everything?q=sports&apiKey=3af3fdc01d08411bb07db7e0b7cd4560`
-        );
+        // const response = await axios.get('https://newsapi.org/v2/everything', {
+        //   params: {
+        //     q: 'sports',
+        //     apiKey: '3af3fdc01d08411bb07db7e0b7cd4560',
+        //   },
+        //   headers: {
+        //     'User-Agent': 'sportsDuniya/1.0',
+        //   },
+        // });'
+        const response = data ;
         const articles = response.data.articles.map((article) => ({
           ...article,
           payout: 0,
