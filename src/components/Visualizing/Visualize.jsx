@@ -13,7 +13,7 @@ const Visualize = () => {
         //   `https://newsapi.org/v2/everything?q=sports&apiKey=028905632fe3447284d33315b9ba3886`
         // );
         const response = mockdata ;
-        const articles = response.data.articles.map((article) => ({
+        const articles = response.articles.map((article) => ({
           ...article,
           payout: 0,
         }));

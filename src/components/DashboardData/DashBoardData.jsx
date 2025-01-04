@@ -24,7 +24,8 @@ const DashboardData = () => {
         //   },
         // });'
         const response = data ;
-        const articles = response.data.articles.map((article) => ({
+        console.log(response);
+        const articles = response.articles.map((article) => ({
           ...article,
           payout: 0,
         }));

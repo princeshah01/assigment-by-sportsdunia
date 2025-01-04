@@ -1,6 +1,5 @@
 import { FaMoon, FaSun } from "react-icons/fa";
 import { HiOutlineMenuAlt2 } from "react-icons/hi";
-import { MdSpaceDashboard } from "react-icons/md";
 import { useAuth0 } from "@auth0/auth0-react";
 import logo from "../../assets/logo-sports-duniya.svg";
 
@@ -19,7 +18,7 @@ const Header = ({ toggleDarkMode, darkMode, toggleSideBar }) => {
             <a href="#" className="flex ms-2 md:me-24 gap-2">
               <img src={logo} alt="" />
               <span className="self-center font-extrabold text-light-text text-xl sm:text-2xl whitespace-nowrap dark:text-dark-text">
-                Sports Duniya
+                Sports Dunia
               </span> 
             </a>
           </div>
